@@ -284,7 +284,7 @@ if valid:
 
     # Market 1777551300 impact at optimal CD
     print(f"\n  Impact on market 1777551300 at cd={cd_best} BN≥{thresh_best:.3f}:")
-    with open('/home/polybot/polymarket-bot/data/market_history.jsonl') as fh:
+    with open('./data/market_history.jsonl') as fh:
         for line in fh:
             d = json.loads(line)
             if d.get('slug','').endswith('1777551300'):
